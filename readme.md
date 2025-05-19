@@ -92,8 +92,8 @@ Listed in `requirements.txt` (see below).
 
 
 ### **📚 Documentation**
-Access API docs at: [`http://localhost:8000/docs`](http://localhost:8000/docs) 🚀
-
+- Access API docs at: [`http://localhost:8000/docs`](http://localhost:8000/docs)
+- Access DB docs at: https://github.com/hameez/eCommerce/Database-Documentation.docx
 ---
 
 
