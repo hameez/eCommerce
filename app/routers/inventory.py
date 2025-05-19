@@ -6,7 +6,6 @@ import app.crud.inventory_crud as crud
 router = APIRouter()
 
 
-
 @router.get("/inventory/")
 def get_inventory_status(db: Session = Depends(get_db)):
     return crud.get_inventory_status(db)

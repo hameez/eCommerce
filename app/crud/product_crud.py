@@ -1,7 +1,6 @@
 from sqlalchemy.orm import Session
-from app.models import Product, ProductCategories, Category
-from app.schemas import ProductCreate, CategoryCreate, ProductResponse
-from app.crud.category_crud import create_category_if_not_exists
+from app.models import Product, ProductCategories
+from app.schemas import ProductCreate, ProductResponse
 
 
 def get_products(db: Session):
@@ -25,7 +24,7 @@ def get_products(db: Session):
             price=product.price,
             created_at=product.created_at,
             updated_at=product.updated_at,
-            category_ids=category_id_list  # ✅ Correct field name
+            category_ids=category_id_list  #
         ))
 
     return product_list
